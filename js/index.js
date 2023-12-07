@@ -5,7 +5,7 @@ function IncrementaClique()
     let novaPontuacao = parseInt(pontuacao.innerText) + parseInt(incremento.innerText);
     pontuacao.innerText= novaPontuacao;
     if(parseInt(novaPontuacao) >= 500){
-        alert('Parabéns!, você ganhou!!');
+        alert('Parabéns!, você ganhou!! Seus cliques somaram ' + novaPontuacao + ' pontos.');
     }
 }
 
@@ -21,6 +21,7 @@ function DefineUpgrade(){
             novoIncremento = inputElement.value;
             pontuacao.innerText = parseInt(pontuacao.innerText) - parseInt(inputElement.value) * 2;
             incremento.innerText= novoIncremento;
+            inputElement.value = '';
         }
         else{
             alert('Você não possui pontos suficientes!');
