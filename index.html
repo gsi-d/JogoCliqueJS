@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" >
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+    <title>Jogo Clique</title>
 </head>
 <body>
-    
+
+    <h1>Jogo Clique</h1>
+    <button id="btnPontuar" onclick="IncrementaClique()">Clique aqui para pontuar</button>
+    <h2>Pontuação: </h2> <h2 id="pontuacao">0</h2>
+
+    <h3>Dê um upgrade em seus cliques!</h3>
+    <input type="int" id="inputUpgrade"/>
+    <button onclick="DefineUpgrade()" id="btnUpgrade" >Comprar upgrade</button>
+    <h2>Incremento: </h2> <h2 id="upgradePontuacao">1</h2>
+
 </body>
 </html>
