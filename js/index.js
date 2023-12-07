@@ -9,26 +9,48 @@ function IncrementaClique()
     }
 }
 
-function DefineUpgrade(){
+function PrimeiroUpgrade(){
     let pontuacao = document.getElementById("pontuacao");
     let incremento = document.getElementById("upgradePontuacao");
-    var inputElement = document.getElementById("inputUpgrade");
-    console.log(inputElement.value);
-    let novoIncremento;
-    if(inputElement.value != null && inputElement.value != ''){
-        console.log(inputElement.value)
-        if(parseInt(inputElement.value) * 2 <= parseInt(pontuacao.innerText)){
-            novoIncremento = inputElement.value;
-            pontuacao.innerText = parseInt(pontuacao.innerText) - parseInt(inputElement.value) * 2;
-            incremento.innerText= novoIncremento;
-            inputElement.value = '';
-        }
-        else{
-            alert('Você não possui pontos suficientes!');
-        }
+    let novoIncremento = 1;
+    if (parseInt(pontuacao.innerText) >= 10) {
+        pontuacao.innerText = parseInt(pontuacao.innerText) - 10;
+        incremento.innerText = parseInt(incremento.innerText) + novoIncremento;        
+    } else {
+        alert('Você não possue pontuação suficiente')
     }
-    else{
-        alert('Insira um valor válido!');
-    }
-    
+        
 }
+function SegundoUpgrade(){
+    let pontuacao = document.getElementById("pontuacao");
+    let incremento = document.getElementById("upgradePontuacao");
+    let novoIncremento = 8;
+    if (parseInt(pontuacao.innerText) >= 50) {
+        pontuacao.innerText = parseInt(pontuacao.innerText) - 50;
+        incremento.innerText = parseInt(incremento.innerText) + novoIncremento;        
+    } else {
+        alert('Você não possue pontuação suficiente')
+    }
+        
+}
+
+function TerceiroUpgrade(){
+    let pontuacao = document.getElementById("pontuacao");
+    let incremento = document.getElementById("upgradePontuacao");
+    let novoIncremento = 32;
+    if (parseInt(pontuacao.innerText) >= 100) {
+        pontuacao.innerText = parseInt(pontuacao.innerText) - 100;
+        incremento.innerText = parseInt(incremento.innerText) + novoIncremento;        
+    } else {
+        alert('Você não possue pontuação suficiente')
+    }
+        
+}
+
+ function ResetPont(){
+    let pontuacao = document.getElementById("pontuacao");
+    let incremento = document.getElementById("upgradePontuacao");
+    pontuacao.innerText = 0 ;
+    incremento.innerText = 1 ;
+
+ }
