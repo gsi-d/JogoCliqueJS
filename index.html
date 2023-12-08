@@ -8,18 +8,30 @@
     <title>Jogo Clique</title>
 </head>
 <body>
+    <div class="geral">
+        <h1>Jogo Clique</h1>
+        <button id="btnPontuar" onclick="IncrementaClique()">Clique aqui para pontuar</button>
+        <h2>Pontuação: </h2> <h2 id="pontuacao">0</h2>
 
-    <h1>Jogo Clique</h1>
-    <button id="btnPontuar" onclick="IncrementaClique()">Clique aqui para pontuar</button>
-    <h2>Pontuação: </h2> <h2 id="pontuacao">0</h2>
-
-    <h3>Dê um upgrade em seus cliques!</h3>
-    
-    <button onclick="PrimeiroUpgrade()" id="btnUpgrade01" >Upgrade 01</button>
-    <button onclick="SegundoUpgrade()" id="btnUpgrade02" >Upgrade 02</button>
-    <button onclick="TerceiroUpgrade()" id="btnUpgrade03" >Upgrade 03</button>
-    <h2>Incremento: </h2> <h2 id="upgradePontuacao">1</h2>
-    <button onclick="ResetPont()" id="btnReset">Resetar Pontuação</button>
-
+        <h3>Dê um upgrade em seus cliques!</h3>
+        <div class="upgrades">
+            <div class="upgrade">
+                <button onclick="PrimeiroUpgrade()" id="btnUpgrade01" >Upgrade 01</button>
+                <p>Custo: <b>10 pontos</b></p>
+            </div>
+            
+            <div class="upgrade">
+                <button onclick="SegundoUpgrade()" id="btnUpgrade02" >Upgrade 02</button>
+                <p>Custo: <b>50 pontos</b></p>
+            </div>
+            
+            <div class="upgrade">
+                <button onclick="TerceiroUpgrade()" id="btnUpgrade03" >Upgrade 03</button>
+                <p>Custo: <b>100 pontos</b></p>
+            </div>
+        </div>
+        <h2>Incremento: </h2> <h2 id="upgradePontuacao">1</h2>
+        <button onclick="ResetPont()" id="btnReset">Resetar Pontuação</button>
+    </div>
 </body>
 </html>

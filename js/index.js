@@ -17,7 +17,7 @@ function PrimeiroUpgrade(){
         pontuacao.innerText = parseInt(pontuacao.innerText) - 10;
         incremento.innerText = parseInt(incremento.innerText) + novoIncremento;        
     } else {
-        alert('Você não possue pontuação suficiente')
+        alert('Você não possui pontuação suficiente!')
     }
         
 }
@@ -29,7 +29,7 @@ function SegundoUpgrade(){
         pontuacao.innerText = parseInt(pontuacao.innerText) - 50;
         incremento.innerText = parseInt(incremento.innerText) + novoIncremento;        
     } else {
-        alert('Você não possue pontuação suficiente')
+        alert('Você não possui pontuação suficiente!')
     }
         
 }
@@ -42,7 +42,7 @@ function TerceiroUpgrade(){
         pontuacao.innerText = parseInt(pontuacao.innerText) - 100;
         incremento.innerText = parseInt(incremento.innerText) + novoIncremento;        
     } else {
-        alert('Você não possue pontuação suficiente')
+        alert('Você não possui pontuação suficiente!')
     }
         
 }
