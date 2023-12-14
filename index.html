@@ -13,24 +13,37 @@
         <button id="btnPontuar" onclick="IncrementaClique()">Clique aqui para pontuar</button>
         <h2>Pontuação: </h2> <h2 id="pontuacao">0</h2>
 
+        
+
         <h3>Dê um upgrade em seus cliques!</h3>
         <div class="upgrades">
             <div class="upgrade">
-                <button onclick="PrimeiroUpgrade()" id="btnUpgrade01" >Upgrade 01</button>
+                <button class="btn-update" onclick="PrimeiroUpgrade()" id="btnUpgrade01" ><img class="img-update" src="img/update1.png"/></button>
                 <p>Custo: <b>10 pontos</b></p>
+                <p>Update: <b>+1</b></p>
             </div>
             
             <div class="upgrade">
-                <button onclick="SegundoUpgrade()" id="btnUpgrade02" >Upgrade 02</button>
+                <button class="btn-update" onclick="SegundoUpgrade()" id="btnUpgrade02" ><img class="img-update" src="img/update2.png"/></button>
                 <p>Custo: <b>50 pontos</b></p>
+                <p>Update: <b>+8</b></p>
             </div>
             
             <div class="upgrade">
-                <button onclick="TerceiroUpgrade()" id="btnUpgrade03" >Upgrade 03</button>
+                <button class="btn-update" onclick="TerceiroUpgrade()" id="btnUpgrade03" ><img class="img-update" src="img/update3.png"/></button>
                 <p>Custo: <b>100 pontos</b></p>
+                <p>Update: <b>+32</b></p>
             </div>
         </div>
-        <h2>Incremento: </h2> <h2 id="upgradePontuacao">1</h2>
+        <div class="ultimaSection">
+            <div style="margin-right: 50px;">
+                <h2>Incremento: </h2> <h2 style="font-size: 150px;" id="upgradePontuacao">1</h2>
+            </div>
+            <div>
+                <h2>Status Update:</h2>
+                <img id="imgStatus" class="img-status-update" src="img/ovo-pokemon.png"/>
+            </div>
+        </div>
         <button onclick="ResetPont()" id="btnReset">Resetar Pontuação</button>
     </div>
 </body>

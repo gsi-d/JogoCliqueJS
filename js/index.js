@@ -15,10 +15,13 @@ function PrimeiroUpgrade(){
     let novoIncremento = 1;
     if (parseInt(pontuacao.innerText) >= 10) {
         pontuacao.innerText = parseInt(pontuacao.innerText) - 10;
-        incremento.innerText = parseInt(incremento.innerText) + novoIncremento;        
+        incremento.innerText = parseInt(incremento.innerText) + novoIncremento;
+        let imgStatus = document.getElementById("imgStatus");
+        imgStatus.src = "./img/squirtle.png";    
     } else {
         alert('Você não possui pontuação suficiente!')
     }
+    
         
 }
 function SegundoUpgrade(){
@@ -27,7 +30,9 @@ function SegundoUpgrade(){
     let novoIncremento = 8;
     if (parseInt(pontuacao.innerText) >= 50) {
         pontuacao.innerText = parseInt(pontuacao.innerText) - 50;
-        incremento.innerText = parseInt(incremento.innerText) + novoIncremento;        
+        incremento.innerText = parseInt(incremento.innerText) + novoIncremento;
+        let imgStatus = document.getElementById("imgStatus");
+        imgStatus.src = "./img/wartortle.png";       
     } else {
         alert('Você não possui pontuação suficiente!')
     }
@@ -40,7 +45,9 @@ function TerceiroUpgrade(){
     let novoIncremento = 32;
     if (parseInt(pontuacao.innerText) >= 100) {
         pontuacao.innerText = parseInt(pontuacao.innerText) - 100;
-        incremento.innerText = parseInt(incremento.innerText) + novoIncremento;        
+        incremento.innerText = parseInt(incremento.innerText) + novoIncremento;
+        let imgStatus = document.getElementById("imgStatus");
+        imgStatus.src = "./img/blastoise.png";
     } else {
         alert('Você não possui pontuação suficiente!')
     }
